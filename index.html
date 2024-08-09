@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Exercise Frontend Mentor, Interactive pricing component">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Interactive pricing component</title>
+    </head>
+    <body>
+
+      <header class="header-container">
+          <h1 class="title">Simple, traffic-based pricing</h1>
+          <p class="header-text">Sign-up for our 30-day trial. No credit card required.</p>   
+      </header>
+
+      <main class="container">
+
+        <section class="container-section">
+          <h2 class="number-pageviews"><span id="total-views">100K</span> pageviews</h2>
+          <div class="progress-bar-chromium"></div>
+          <input class="input-price" type="range" name="range" min="0" max="4" step="1" value="3" id="range-price" >
+          <label class="label-range" for="range-price"><span id="price">$16.00</span> / month</label>
+          <div class="button-contain">
+            <p class="button-text">Monthly Billing</p>
+            <button class="button-switch" id="switch-mode"><span class="switch"></span></button>
+            <p class="button-text">Yearly Billing <span class="discount">25% <span>discount</span></span></p>
+          </div>
+        </section>
+
+        <hr class="line">
+
+        <div class="bottom">
+          <ul class="list">
+            <li class="li-bottom">Unlimited websites</li>
+            <li class="li-bottom">100% data ownership</li>
+            <li class="li-bottom">Start my trial</li>
+          </ul>
+          <button class="button">Start my trial</button>
+        </div>
+
+      </main>
+
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html>
